@@ -23,29 +23,32 @@
 		<link href="css/styles.css" rel="stylesheet" />
 
 		<title>EDPS 6447 Summer 2020</title>
-	</head>
+	</head
 	<body>
 		<div class="container-fluid" style="height: 100vh;">
 			<div class="row justify-content-center align-items-center h-100">
 				<div id="sec_landing" class="col-8 col-md-6 col-lg-4">
 					<div class="card">
-						<div class="card-header">QUIZ WARS</div>
+                        <div class="card-header">LAST DANCE TRIVIA</div>
 						<div class="card-body">
 							<form>
 								<label for="input_username">Enter your username: </label>
-								<input id="input_username" class="form-control" type="text" placeholder="Han Solo">
+								<input id="input_username" class="form-control" type="text" placeholder="John Stockton">
 							</form>
 							<button id="btn_start" type="button" class="btn btn-secondary w-100 mt-3">Start</i></button>
 							<button id="btn_tutorial" type="button" class="btn btn-secondary w-100 mt-1" disabled>Tutorial</i></button>
 						</div>
 					</div>
 				</div>
-				<div id="sec_quiz" class="col-10 col-md-8 col-lg-6">
+                <div>
+                <iframe id="iframe_video" src="https://www.youtube.com/embed/-WWvVVXOiOE" width="320" height="240"></iframe>
+                </div>
+                <div id="sec_quiz" class="col-10 col-md-8 col-lg-6">
 					<div class="card">
-						<div class="card-header">QUIZ WARS</div>
+						<div class="card-header">1997 NBA Finals</div>
 						<div class="card-body">
 							<p class="font-weight-bold">Read the statement carefully and indicate whether it is True or False</p>
-							<p id="text_statement" class="font-italic">Javascript variables are containers for storing data values.</p>
+							<p id="text_statement" class="font-italic">Michael Jordan scored 38 points in his flu game against the Utah Jazz in game 5 of the 1997 NBA Finals.</p>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_1" value="option1" checked />
 								<label class="form-check-label" for="input_1">True</label>
@@ -83,10 +86,9 @@
 						</div>
 					</div>
 					<div class="alert alert-warning mt-3">
-						<span><i class="fas fa-jedi mb-3"></i> Jedi Star Coder</span>
+						<span><i class="fas fa-jedi mb-3"></i> Michael Jordan</span>
 						<p id="text_agent_dialogue">
-							Javascript is what gives a coder his power. It's a programming field created by all living developers. It surrounds us and
-							penetrates us. It binds your one-day Amazon deliveries.
+							"I can accept failure, everyone fails at something. But I can’t accept not trying." 
 						</p>
 					</div>
 				</div>
@@ -109,7 +111,8 @@
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
-		></script>		
-        <script src="variable.js"></script>
+		></script>
+		<script src="variable.js"></script>
+		<script src="data.js"></script>
 	</body>
 </html>
