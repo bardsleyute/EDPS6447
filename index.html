@@ -23,39 +23,40 @@
 		<link href="css/styles.css" rel="stylesheet" />
 
 		<title>EDPS 6447 Summer 2020</title>
-	</head
+	</head>
 	<body>
 		<div class="container-fluid" style="height: 100vh;">
 			<div class="row justify-content-center align-items-center h-100">
-				<div id="sec_landing" class="col-8 col-md-6 col-lg-4">
+				<div id="sec_landing" class="col-8 col-md-6 col-lg-4 d-none">
 					<div class="card">
-                        <div class="card-header">LAST DANCE TRIVIA</div>
+						<div class="card-header">The Last Dance Trivia</div>
 						<div class="card-body">
 							<form>
 								<label for="input_username">Enter your username: </label>
-								<input id="input_username" class="form-control" type="text" placeholder="John Stockton">
+								<input id="input_username" class="form-control" type="text" placeholder="Michael Jordan">
 							</form>
 							<button id="btn_start" type="button" class="btn btn-secondary w-100 mt-3">Start</i></button>
 							<button id="btn_tutorial" type="button" class="btn btn-secondary w-100 mt-1" disabled>Tutorial</i></button>
 						</div>
 					</div>
 				</div>
-                <div>
-                <iframe id="iframe_video" src="https://www.youtube.com/embed/-WWvVVXOiOE" width="320" height="240"></iframe>
-                </div>
-                <div id="sec_quiz" class="col-10 col-md-8 col-lg-6">
+				<div id="sec_quiz" class="col-10 col-md-8 col-lg-6 d-none">
 					<div class="card">
-						<div class="card-header">1997 NBA Finals</div>
+						<div class="card-header">The Last Dance Trivia</div>
 						<div class="card-body">
-							<p class="font-weight-bold">Read the statement carefully and indicate whether it is True or False</p>
-							<p id="text_statement" class="font-italic">Michael Jordan scored 38 points in his flu game against the Utah Jazz in game 5 of the 1997 NBA Finals.</p>
+							<p class="font-weight-bold">Read the statement carefully and indicate whether it is True, False, or Maybe.</p>
+							<p id="text_statement" class="font-italic">Michael Jordan averaged 33.5 points a game in his final season as a Chicago Bull.</p>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_1" value="option1" checked />
-								<label class="form-check-label" for="input_1">True</label>
+								<label id="text_input1" class="form-check-label" for="input_1">True</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_2" value="option2" />
+								<label id="text_input2" class="form-check-label" for="input_2">False</label>
 							</div>
 							<div class="form-check mb-3">
-								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_2" value="option2" />
-								<label class="form-check-label" for="input_2">False</label>
+								<input class="form-check-input" type="radio" name="quizzlet_input" id="input_3" value="option3" />
+								<label id="text_input3" class="form-check-label" for="input_3">False</label>
 							</div>
 							<div id="cont_success" class="alert alert-success d-none" role="alert">
 								Your answer is correct.
@@ -74,7 +75,7 @@
 									><i class="fas fa-thumbs-down ml-1 mr-2"></i>
 								</div>
 								<div class="btn-group" role="group" aria-label="Basic example">
-									<button id="btn_previous" type="button" class="btn btn-secondary">
+									<button id="btn_previous" type="button" class="btn btn-secondary" disabled>
 										<i class="fas fa-chevron-left"></i>
 									</button>
 									<button id="btn_hint" type="button" class="btn btn-secondary">
@@ -86,9 +87,9 @@
 						</div>
 					</div>
 					<div class="alert alert-warning mt-3">
-						<span><i class="fas fa-jedi mb-3"></i> Michael Jordan</span>
+						<span><i class="fas fa-jedi mb-3"></i> Famous Michael Jordan Quotes</span>
 						<p id="text_agent_dialogue">
-							"I can accept failure, everyone fails at something. But I can’t accept not trying." 
+							I've failed over and over and over again in my life and that is why I succeed.
 						</p>
 					</div>
 				</div>
@@ -112,7 +113,9 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
-		<script src="variable.js"></script>
-		<script src="data.js"></script>
+		<script src="js/variable.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/listener.js"></script>
+		<script src="js/controller.js"></script>
 	</body>
 </html>
